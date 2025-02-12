@@ -1,5 +1,5 @@
 {
-    "name": "fkg.t_5717_hoeringspart_t",
+    "name": "t_5717_hoeringspart_t",
     "columns": [
         {
             "name": "part_type_kode",

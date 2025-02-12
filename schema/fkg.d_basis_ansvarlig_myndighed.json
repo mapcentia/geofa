@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_ansvarlig_myndighed",
+    "name": "d_basis_ansvarlig_myndighed",
     "columns": [
         {
             "name": "cvr_kode",

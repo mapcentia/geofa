@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_5610_plan_type",
+    "name": "d_5610_plan_type",
     "columns": [
         {
             "name": "plan_type_kode",

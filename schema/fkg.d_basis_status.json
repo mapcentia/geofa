@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_status",
+    "name": "d_basis_status",
     "columns": [
         {
             "name": "statuskode",

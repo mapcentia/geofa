@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_planstatus",
+    "name": "d_basis_planstatus",
     "columns": [
         {
             "name": "planstatus_kode",

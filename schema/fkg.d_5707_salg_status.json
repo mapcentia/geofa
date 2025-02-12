@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_5707_salg_status",
+    "name": "d_5707_salg_status",
     "columns": [
         {
             "name": "salg_status_kode",

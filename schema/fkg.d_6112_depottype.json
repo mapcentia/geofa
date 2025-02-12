@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_6112_depottype",
+    "name": "d_6112_depottype",
     "columns": [
         {
             "name": "depot_type_kode",

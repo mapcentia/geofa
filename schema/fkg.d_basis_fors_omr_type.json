@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_fors_omr_type",
+    "name": "d_basis_fors_omr_type",
     "columns": [
         {
             "name": "fors_omr_type_kode",

@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_hastighed",
+    "name": "d_basis_hastighed",
     "columns": [
         {
             "name": "hastighed_kode",

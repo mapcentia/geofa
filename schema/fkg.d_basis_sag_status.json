@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_sag_status",
+    "name": "d_basis_sag_status",
     "columns": [
         {
             "name": "sag_status_kode",

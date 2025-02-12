@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_belaegning",
+    "name": "d_basis_belaegning",
     "columns": [
         {
             "name": "belaegning_kode",

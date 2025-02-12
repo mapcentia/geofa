@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_5714_udd_institution_type",
+    "name": "d_5714_udd_institution_type",
     "columns": [
         {
             "name": "udd_institution_type_kode",

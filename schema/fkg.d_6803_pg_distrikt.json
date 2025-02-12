@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_6803_pg_distrikt",
+    "name": "d_6803_pg_distrikt",
     "columns": [
         {
             "name": "pg_distrikt_kode",

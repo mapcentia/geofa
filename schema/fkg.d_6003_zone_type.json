@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_6003_zone_type",
+    "name": "d_6003_zone_type",
     "columns": [
         {
             "name": "zone_type_kode",

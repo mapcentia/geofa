@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_sted_metode",
+    "name": "d_basis_sted_metode",
     "columns": [
         {
             "name": "sted_metode_kode",

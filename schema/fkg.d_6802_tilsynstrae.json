@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_6802_tilsynstrae",
+    "name": "d_6802_tilsynstrae",
     "columns": [
         {
             "name": "tilsynstrae_kode",

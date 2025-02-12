@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_5610_planlaegningskort_type",
+    "name": "d_5610_planlaegningskort_type",
     "columns": [
         {
             "name": "planlaegningskort_type_kode",

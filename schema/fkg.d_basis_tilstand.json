@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_basis_tilstand",
+    "name": "d_basis_tilstand",
     "columns": [
         {
             "name": "tilstand_kode",

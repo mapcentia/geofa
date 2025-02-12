@@ -1,5 +1,5 @@
 {
-    "name": "fkg.d_6803_pg_fagentreprise",
+    "name": "d_6803_pg_fagentreprise",
     "columns": [
         {
             "name": "pg_fagentreprise_kode",

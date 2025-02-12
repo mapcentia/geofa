@@ -1,5 +1,5 @@
 {
-    "name": "fkg.t_5402_genbr_con_t",
+    "name": "t_5402_genbr_con_t",
     "columns": [
         {
             "name": "gc_type_kode",

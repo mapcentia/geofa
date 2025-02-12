@@ -1,5 +1,5 @@
 {
-    "name": "fkg.t_5200_aff_prod_udbr_t",
+    "name": "t_5200_aff_prod_udbr_t",
     "columns": [
         {
             "name": "ejd_nr",

@@ -1,5 +1,5 @@
 {
-    "name": "fkg.t_5607_ladefacilitet_t",
+    "name": "t_5607_ladefacilitet_t",
     "columns": [
         {
             "name": "effekt_type_kode",

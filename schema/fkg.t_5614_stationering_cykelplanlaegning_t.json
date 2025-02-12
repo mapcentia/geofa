@@ -1,5 +1,5 @@
 {
-    "name": "fkg.t_5614_stationering_cykelplanlaegning_t",
+    "name": "t_5614_stationering_cykelplanlaegning_t",
     "columns": [
         {
             "name": "stationerings_nr",

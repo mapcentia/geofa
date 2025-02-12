@@ -1,5 +1,5 @@
 {
-    "name": "fkg.t_5506_spildev_pl_pkt_t",
+    "name": "t_5506_spildev_pl_pkt_t",
     "columns": [
         {
             "name": "anlaeg_type_kode",
