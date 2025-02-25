@@ -11,7 +11,7 @@
     "type": "MULTIPOINT",
     "srid": 25832,
     "authentication": "Write",
-    "layergroup": null,
+    "layergroup": "test",
     "sort_id": 0,
     "tags": [
         "test"
