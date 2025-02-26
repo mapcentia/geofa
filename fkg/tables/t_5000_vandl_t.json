@@ -4,8 +4,6 @@
         {
             "name": "dvfi_bedoemmelse_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 14,
             "_typname": "int4",
@@ -18,16 +16,16 @@
                 "fkg.d_basis_dvfi_bedoemmelse.dvfi_bedoemmelse_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "vandl_type_kode",
             "type": "integer",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 6,
             "_typname": "int4",
@@ -40,16 +38,16 @@
                 "fkg.d_5000_vandl_type.vandl_type_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "p3vandloeb_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 12,
             "_typname": "int4",
@@ -62,16 +60,16 @@
                 "fkg.d_basis_ja_nej.ja_nej_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "ejerstatus_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 7,
             "_typname": "int4",
@@ -84,16 +82,16 @@
                 "fkg.d_basis_ejerstatus.ejerstatus_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "vandfoeringsforhold",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 18,
             "_typname": "int4",
@@ -104,8 +102,10 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "vandfoeringsforhold >= 9 AND vandfoeringsforhold <= 45"
@@ -114,8 +114,6 @@
         {
             "name": "maalsaetning_opfyldt_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 19,
             "_typname": "int4",
@@ -128,16 +126,16 @@
                 "fkg.d_basis_ja_nej.ja_nej_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "fot_id",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 20,
             "_typname": "int4",
@@ -148,8 +146,10 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "fot_id >= 0 AND fot_id <= '2147483648'::bigint"
@@ -158,8 +158,6 @@
         {
             "name": "trussel_vand_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 21,
             "_typname": "int4",
@@ -172,16 +170,16 @@
                 "fkg.d_basis_trussel_vand.trussel_vand_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "klasse_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 8,
             "_typname": "int4",
@@ -194,16 +192,16 @@
                 "fkg.d_5000_klasse.klasse_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "tidl_amt_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 9,
             "_typname": "int4",
@@ -216,16 +214,16 @@
                 "fkg.d_basis_ja_nej.ja_nej_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "maalsaetning_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 5,
             "_typname": "int4",
@@ -238,16 +236,16 @@
                 "fkg.d_5000_maalsaetning.maalsaetning_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "station_til",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 16,
             "_typname": "float8",
@@ -258,8 +256,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "station_til >= 0.0::double precision AND station_til <= 200000.0::double precision"
@@ -268,8 +268,6 @@
         {
             "name": "vandloebs_bredde",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 17,
             "_typname": "float8",
@@ -280,8 +278,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "vandloebs_bredde >= 0.1::double precision AND vandloebs_bredde <= 99.9::double precision"
@@ -290,8 +290,6 @@
         {
             "name": "station_fra",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 15,
             "_typname": "float8",
@@ -302,8 +300,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "station_fra >= 0.0::double precision AND station_fra <= 200000.0::double precision"
@@ -312,8 +312,6 @@
         {
             "name": "ansvar_vedligehold",
             "type": "character varying(254)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 11,
             "_typname": "varchar",
@@ -324,16 +322,16 @@
             "_max_bytes": 1016,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "navn",
             "type": "character varying(128)",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 2,
             "_typname": "varchar",
@@ -344,16 +342,16 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "dmu_ref",
             "type": "character varying(128)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 3,
             "_typname": "varchar",
@@ -364,16 +362,16 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "vandloeb_nr",
             "type": "character varying(128)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 4,
             "_typname": "varchar",
@@ -384,16 +382,16 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "vedligehold",
             "type": "character varying(100)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 10,
             "_typname": "varchar",
@@ -404,16 +402,16 @@
             "_max_bytes": 400,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "link",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 22,
             "_typname": "varchar",
@@ -424,16 +422,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "sejlads",
             "type": "character varying(100)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 13,
             "_typname": "varchar",
@@ -444,16 +442,16 @@
             "_max_bytes": 400,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "versions_id",
             "type": "uuid",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 1,
             "_typname": "uuid",
@@ -466,8 +464,10 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_primary": true,
             "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": [
                 "btree"
             ],
@@ -476,8 +476,6 @@
         {
             "name": "geometri",
             "type": "geometry(MultiLineString,25832)",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 23,
             "_typname": "geometry",
@@ -488,8 +486,10 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": [
                 "gist"
             ],
@@ -498,6 +498,7 @@
             "_srid": "25832"
         }
     ],
+    "comment": null,
     "indices": [
         {
             "name": "t_5000_vandl_pk",
@@ -660,7 +661,6 @@
             "check": "vandloebs_bredde >= 0.1::double precision AND vandloebs_bredde <= 99.9::double precision"
         }
     ],
-    "comment": null,
     "links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5000_vandl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5000_vandl_t\/indices",

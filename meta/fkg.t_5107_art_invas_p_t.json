@@ -6,6 +6,7 @@
     "f_table_abstract": null,
     "f_table_title": null,
     "pkey": "versions_id",
+    "rel_type": "TABLE",
     "coord_dimension": 2,
     "type": "MULTIPOINT",
     "srid": 25832,
@@ -18,8 +19,6 @@
     "fields": {
         "invasivart_kode": {
             "type": "integer",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "num": 2,
             "full_type": "integer",
@@ -33,15 +32,15 @@
                 "fkg.d_basis_invasivart.invasivart_kode"
             ],
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "antal_kode": {
             "type": "integer",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "num": 4,
             "full_type": "integer",
@@ -55,15 +54,15 @@
                 "fkg.d_basis_antal.antal_kode"
             ],
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "link": {
             "type": "character varying",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 7,
             "full_type": "character varying(1024)",
@@ -75,15 +74,15 @@
             "max_bytes": 4096,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "inventoer": {
             "type": "character varying",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 3,
             "full_type": "character varying(30)",
@@ -95,15 +94,15 @@
             "max_bytes": 120,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "forekomst": {
             "type": "character varying",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 5,
             "full_type": "character varying(128)",
@@ -115,15 +114,15 @@
             "max_bytes": 512,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "sagsnr": {
             "type": "character varying",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 6,
             "full_type": "character varying(128)",
@@ -135,15 +134,15 @@
             "max_bytes": 512,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "versions_id": {
             "type": "uuid",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "num": 1,
             "full_type": "uuid",
@@ -157,8 +156,10 @@
                 "fkg.generel.versions_id"
             ],
             "restriction": null,
-            "is_primary": true,
             "is_unique": true,
+            "is_primary": true,
+            "is_nullable": false,
+            "default_value": true,
             "index_method": [
                 "btree"
             ],
@@ -166,8 +167,6 @@
         },
         "geometri": {
             "type": "geometry",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "num": 8,
             "full_type": "geometry(MultiPoint,25832)",
@@ -179,8 +178,10 @@
             "max_bytes": null,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "index_method": [
                 "gist"
             ],

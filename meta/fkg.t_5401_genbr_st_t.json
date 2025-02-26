@@ -6,6 +6,7 @@
     "f_table_abstract": null,
     "f_table_title": null,
     "pkey": "versions_id",
+    "rel_type": "TABLE",
     "coord_dimension": 2,
     "type": "MULTIPOINT",
     "srid": 25832,
@@ -18,8 +19,6 @@
     "fields": {
         "gs_type_kode": {
             "type": "integer",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "num": 3,
             "full_type": "integer",
@@ -33,15 +32,15 @@
                 "fkg.d_5401_gs_type.gs_type_kode"
             ],
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "postnr": {
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 8,
             "full_type": "integer",
@@ -55,15 +54,15 @@
                 "fkg.d_basis_postnr.postnr"
             ],
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "p_nr": {
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 4,
             "full_type": "integer",
@@ -75,8 +74,10 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": [
                 "p_nr >= 1 AND p_nr <= 99999"
@@ -84,8 +85,6 @@
         },
         "vejkode": {
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 5,
             "full_type": "integer",
@@ -99,15 +98,15 @@
                 "fkg.d_vejnavn.vejkode"
             ],
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "cvf_vejkode": {
             "type": "character",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 6,
             "full_type": "character(7)",
@@ -119,15 +118,15 @@
             "max_bytes": null,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "adr_id": {
             "type": "character varying",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 11,
             "full_type": "character varying(128)",
@@ -139,15 +138,15 @@
             "max_bytes": 512,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "gs_navn": {
             "type": "character varying",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 2,
             "full_type": "character varying(50)",
@@ -159,15 +158,15 @@
             "max_bytes": 200,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "husnr": {
             "type": "character varying",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 7,
             "full_type": "character varying(4)",
@@ -179,15 +178,15 @@
             "max_bytes": 16,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "link": {
             "type": "character varying",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "num": 9,
             "full_type": "character varying(1024)",
@@ -199,15 +198,15 @@
             "max_bytes": 4096,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "index_method": null,
             "checks": null
         },
         "versions_id": {
             "type": "uuid",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "num": 1,
             "full_type": "uuid",
@@ -221,8 +220,10 @@
                 "fkg.generel.versions_id"
             ],
             "restriction": null,
-            "is_primary": true,
             "is_unique": true,
+            "is_primary": true,
+            "is_nullable": false,
+            "default_value": true,
             "index_method": [
                 "btree"
             ],
@@ -230,8 +231,6 @@
         },
         "geometri": {
             "type": "geometry",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "num": 10,
             "full_type": "geometry(MultiPoint,25832)",
@@ -243,8 +242,10 @@
             "max_bytes": null,
             "reference": null,
             "restriction": null,
-            "is_primary": false,
             "is_unique": false,
+            "is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "index_method": [
                 "gist"
             ],

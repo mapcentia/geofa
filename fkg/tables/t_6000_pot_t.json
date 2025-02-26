@@ -4,8 +4,6 @@
         {
             "name": "kotesystem_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 12,
             "_typname": "int4",
@@ -18,16 +16,16 @@
                 "fkg.d_basis_kotesystem.kotesystem_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "magasin_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 7,
             "_typname": "int4",
@@ -40,16 +38,16 @@
                 "fkg.d_basis_magasin.magasin_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "aekvidistance",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 6,
             "_typname": "float8",
@@ -60,8 +58,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "aekvidistance >= 0.1::double precision AND aekvidistance <= 999.9::double precision"
@@ -70,8 +70,6 @@
         {
             "name": "kote",
             "type": "double precision",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 4,
             "_typname": "float8",
@@ -82,8 +80,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "kote >= '-999.99'::numeric::double precision AND kote <= 999.99::double precision"
@@ -92,8 +92,6 @@
         {
             "name": "usikkerhed",
             "type": "character varying(250)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 13,
             "_typname": "varchar",
@@ -104,16 +102,16 @@
             "_max_bytes": 1000,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "navn",
             "type": "character varying(50)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 5,
             "_typname": "varchar",
@@ -124,16 +122,16 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "reference",
             "type": "character varying(250)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 11,
             "_typname": "varchar",
@@ -144,16 +142,16 @@
             "_max_bytes": 1000,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "link",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 14,
             "_typname": "varchar",
@@ -164,16 +162,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "pejling",
             "type": "character varying(50)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 8,
             "_typname": "varchar",
@@ -184,16 +182,16 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "oprind_kilde",
             "type": "character varying(50)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 9,
             "_typname": "varchar",
@@ -204,16 +202,16 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "metode",
             "type": "character varying(250)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 10,
             "_typname": "varchar",
@@ -224,16 +222,16 @@
             "_max_bytes": 1000,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "gyldig_til",
             "type": "date",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 3,
             "_typname": "date",
@@ -244,16 +242,16 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "gyldig_fra",
             "type": "date",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 2,
             "_typname": "date",
@@ -264,16 +262,16 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "versions_id",
             "type": "uuid",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 1,
             "_typname": "uuid",
@@ -286,8 +284,10 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_primary": true,
             "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": [
                 "btree"
             ],
@@ -296,8 +296,6 @@
         {
             "name": "geometri",
             "type": "geometry(MultiLineString,25832)",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 15,
             "_typname": "geometry",
@@ -308,8 +306,10 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": [
                 "gist"
             ],
@@ -318,6 +318,7 @@
             "_srid": "25832"
         }
     ],
+    "comment": null,
     "indices": [
         {
             "name": "t_6000_pot_pk",
@@ -388,7 +389,6 @@
             ]
         }
     ],
-    "comment": null,
     "links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6000_pot_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6000_pot_t\/indices",

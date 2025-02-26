@@ -4,8 +4,6 @@
         {
             "name": "tilsynstrae_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 32,
             "_typname": "int4",
@@ -18,16 +16,16 @@
                 "fkg.d_6802_tilsynstrae.tilsynstrae_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "bevaringsvaerdig_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 31,
             "_typname": "int4",
@@ -40,16 +38,16 @@
                 "fkg.d_6802_bevaringsvaerdig.bevaringsvaerdig_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "traebetegn_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 29,
             "_typname": "int4",
@@ -62,16 +60,16 @@
                 "fkg.d_6802_traebetegn.traebetegn_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "klip_sider",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 20,
             "_typname": "int4",
@@ -82,8 +80,10 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "klip_sider >= 0 AND klip_sider <= 2"
@@ -92,8 +92,6 @@
         {
             "name": "vedlhold_p_type_kode",
             "type": "integer",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 2,
             "_typname": "int4",
@@ -106,16 +104,16 @@
                 "fkg.d_6802_groenvedligh_punkt.vedlhold_p_type_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "livsfase_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 33,
             "_typname": "int4",
@@ -128,16 +126,16 @@
                 "fkg.d_6802_livsfase.livsfase_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "driftniv_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 24,
             "_typname": "int4",
@@ -150,16 +148,16 @@
                 "fkg.d_basis_driftniv.driftniv_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "ukrudtsbek_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 25,
             "_typname": "int4",
@@ -172,16 +170,16 @@
                 "fkg.d_basis_ukrudtsbek.ukrudtsbek_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "tilstand_kode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 26,
             "_typname": "int4",
@@ -194,16 +192,16 @@
                 "fkg.d_basis_tilstand.tilstand_kode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "vejkode",
             "type": "integer",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 28,
             "_typname": "int4",
@@ -216,16 +214,16 @@
                 "fkg.d_vejnavn.vejkode"
             ],
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "diameter",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 17,
             "_typname": "float8",
@@ -236,8 +234,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "diameter >= 0.01::double precision AND diameter <= 99.99::double precision"
@@ -246,8 +246,6 @@
         {
             "name": "omkreds",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 19,
             "_typname": "float8",
@@ -258,8 +256,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "omkreds >= 0.01::double precision AND omkreds <= 99.99::double precision"
@@ -268,8 +268,6 @@
         {
             "name": "klip_flade",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 21,
             "_typname": "float8",
@@ -280,8 +278,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "klip_flade >= 0.01::double precision AND klip_flade <= 99999.99::double precision"
@@ -290,8 +290,6 @@
         {
             "name": "hoejde",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 14,
             "_typname": "float8",
@@ -302,8 +300,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "hoejde >= 0.01::double precision AND hoejde <= 9.99::double precision"
@@ -312,8 +312,6 @@
         {
             "name": "bredde",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 15,
             "_typname": "float8",
@@ -324,8 +322,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "bredde >= 0.01::double precision AND bredde <= 9.99::double precision"
@@ -334,8 +334,6 @@
         {
             "name": "laengde",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 16,
             "_typname": "float8",
@@ -346,8 +344,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "laengde >= 0.01::double precision AND laengde <= 99999.99::double precision"
@@ -356,8 +356,6 @@
         {
             "name": "areal",
             "type": "double precision",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 18,
             "_typname": "float8",
@@ -368,8 +366,10 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "areal >= 0.5::double precision AND areal <= 99999.99::double precision"
@@ -378,8 +378,6 @@
         {
             "name": "foto_link3",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 38,
             "_typname": "varchar",
@@ -390,16 +388,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "biodiversitet",
             "type": "character varying(150)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 3,
             "_typname": "varchar",
@@ -410,16 +408,16 @@
             "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "arbejdssted",
             "type": "character varying(150)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 4,
             "_typname": "varchar",
@@ -430,16 +428,16 @@
             "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "konto_nr",
             "type": "character varying(150)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 5,
             "_typname": "varchar",
@@ -450,16 +448,16 @@
             "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "cvr_opslag",
             "type": "character varying(8)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 6,
             "_typname": "varchar",
@@ -470,16 +468,16 @@
             "_max_bytes": 32,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "udfoerer_entrep",
             "type": "character varying(50)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 7,
             "_typname": "varchar",
@@ -490,16 +488,16 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "udbyder_kontakt",
             "type": "character varying(150)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 8,
             "_typname": "varchar",
@@ -510,16 +508,16 @@
             "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "sagsnr",
             "type": "character varying(128)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 9,
             "_typname": "varchar",
@@ -530,16 +528,16 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "iot_enhed",
             "type": "character varying(255)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 22,
             "_typname": "varchar",
@@ -550,16 +548,16 @@
             "_max_bytes": 1020,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "iot_maaling",
             "type": "character varying(125)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 23,
             "_typname": "varchar",
@@ -570,16 +568,16 @@
             "_max_bytes": 500,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "foto_link",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 35,
             "_typname": "varchar",
@@ -590,16 +588,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "foto_link1",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 36,
             "_typname": "varchar",
@@ -610,16 +608,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "foto_link2",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 37,
             "_typname": "varchar",
@@ -630,16 +628,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "geofafoto",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 39,
             "_typname": "varchar",
@@ -650,16 +648,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "geofafoto1",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 40,
             "_typname": "varchar",
@@ -670,16 +668,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "geofafoto2",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 41,
             "_typname": "varchar",
@@ -690,16 +688,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "geofafoto3",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 42,
             "_typname": "varchar",
@@ -710,16 +708,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "traeart_sort_suppl",
             "type": "character varying(124)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 30,
             "_typname": "varchar",
@@ -730,16 +728,16 @@
             "_max_bytes": 496,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "link",
             "type": "character varying(1024)",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 34,
             "_typname": "varchar",
@@ -750,16 +748,16 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": null
         },
         {
             "name": "etabl_pleje_udloeb",
             "type": "date",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 12,
             "_typname": "date",
@@ -770,8 +768,10 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "etabl_pleje_udloeb >= '2007-01-01'::date AND etabl_pleje_udloeb <= '2999-12-31'::date"
@@ -780,8 +780,6 @@
         {
             "name": "udskiftningsdato",
             "type": "date",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 13,
             "_typname": "date",
@@ -792,8 +790,10 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "udskiftningsdato >= '2007-01-01'::date AND udskiftningsdato <= '2999-12-31'::date"
@@ -802,8 +802,6 @@
         {
             "name": "anlaegsdato",
             "type": "date",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 11,
             "_typname": "date",
@@ -814,8 +812,10 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "anlaegsdato >= '1600-01-01'::date AND anlaegsdato <= '2999-12-31'::date"
@@ -824,8 +824,6 @@
         {
             "name": "froeaar",
             "type": "date",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 10,
             "_typname": "date",
@@ -836,8 +834,10 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "froeaar >= '1600-01-01'::date AND froeaar <= '2999-12-31'::date"
@@ -846,8 +846,6 @@
         {
             "name": "tilstand_dato",
             "type": "date",
-            "is_nullable": true,
-            "default_value": null,
             "comment": null,
             "_num": 27,
             "_typname": "date",
@@ -858,8 +856,10 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
             "_index_method": null,
             "_checks": [
                 "tilstand_dato >= '1600-01-01'::date AND tilstand_dato <= '2999-12-31'::date"
@@ -868,8 +868,6 @@
         {
             "name": "versions_id",
             "type": "uuid",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 1,
             "_typname": "uuid",
@@ -882,8 +880,10 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_primary": true,
             "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": [
                 "btree"
             ],
@@ -892,8 +892,6 @@
         {
             "name": "geometri",
             "type": "geometry(MultiPoint,25832)",
-            "is_nullable": false,
-            "default_value": null,
             "comment": null,
             "_num": 43,
             "_typname": "geometry",
@@ -904,8 +902,10 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
-            "_is_primary": false,
             "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": true,
             "_index_method": [
                 "gist"
             ],
@@ -914,6 +914,7 @@
             "_srid": "25832"
         }
     ],
+    "comment": null,
     "indices": [
         {
             "name": "t_6802_parl_pkt_pk",
@@ -1116,7 +1117,6 @@
             "check": "udskiftningsdato >= '2007-01-01'::date AND udskiftningsdato <= '2999-12-31'::date"
         }
     ],
-    "comment": null,
     "links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6802_parl_pkt_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6802_parl_pkt_t\/indices",
