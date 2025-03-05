@@ -1,0 +1,145 @@
+{
+    "name": "spatial_ref_sys",
+    "columns": [
+        {
+            "name": "srid",
+            "type": "integer",
+            "comment": null,
+            "_num": 1,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": true,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": [
+                "srid > 0 AND srid <= 998999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "auth_name",
+            "type": "character varying(256)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 256,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1024,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "auth_srid",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "srtext",
+            "type": "character varying(2048)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 2048,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8192,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "proj4text",
+            "type": "character varying(2048)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 2048,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8192,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "spatial_ref_sys_pkey",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "srid"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "spatial_ref_sys_srid_check",
+            "constraint": "check",
+            "check": "srid > 0 AND srid <= 998999"
+        },
+        {
+            "name": "spatial_ref_sys_pkey",
+            "constraint": "primary",
+            "columns": [
+                "srid"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/public\/tables\/spatial_ref_sys\/columns",
+        "indices": "\/api\/v4\/schemas\/public\/tables\/spatial_ref_sys\/indices",
+        "constraints": "\/api\/v4\/schemas\/public\/tables\/spatial_ref_sys\/constraints",
+        "privileges": "\/api\/v4\/schemas\/public\/tables\/spatial_ref_sys\/privileges"
+    }
+}

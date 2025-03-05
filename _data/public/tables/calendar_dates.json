@@ -1,0 +1,117 @@
+{
+    "name": "calendar_dates",
+    "columns": [
+        {
+            "name": "gid",
+            "type": "integer",
+            "comment": null,
+            "_num": 1,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": false,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "service_id",
+            "type": "character varying",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "date",
+            "type": "character varying",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "exception_type",
+            "type": "character varying",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": true,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "calendar_dates_pkey",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "gid"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "calendar_dates_pkey",
+            "constraint": "primary",
+            "columns": [
+                "gid"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/public\/tables\/calendar_dates\/columns",
+        "indices": "\/api\/v4\/schemas\/public\/tables\/calendar_dates\/indices",
+        "constraints": "\/api\/v4\/schemas\/public\/tables\/calendar_dates\/constraints",
+        "privileges": "\/api\/v4\/schemas\/public\/tables\/calendar_dates\/privileges"
+    }
+}
